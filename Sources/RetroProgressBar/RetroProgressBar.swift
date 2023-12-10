@@ -4,6 +4,10 @@ import UIKit
 
 fileprivate let WIDTH_ANIMATABLE_INSET: CGFloat = 3
 
+fileprivate func normalizeValue(_ value: Double) -> Double {
+    max(min(value, 1), 0)
+}
+
 public final class RetroProgressBar: UIView {
     
     /// The color of the progress bar
@@ -41,7 +45,6 @@ public final class RetroProgressBar: UIView {
     
     private let glareLayer = ProgressGlareLayer()
     private let shimmeringLayer = ShimmeringLayer()
-    private var animatedLayers: [ProgressAnimatable] = []
     private let progressMaskLayer = ProgressMaskLayer()
     private let progressBackgroundLayer = ProgressBackgroundLayer()
     
@@ -89,10 +92,17 @@ public final class RetroProgressBar: UIView {
         )
     }
 
+    private func calculateProgressWidth(_ value: Double) -> CGFloat {
+        let normalizedValue = normalizeValue(value)
+        let width = bounds.width * normalizedValue - borderWidth
+        return width
+    }
+    
     /// Set value without animation
     public func setValue(_ value: Double) {
-        let newWidth = bounds.width * value
+        let newWidth = calculateProgressWidth(value)
         shimmeringLayer.setToWidth(newWidth)
+        glareLayer.setToWidth(newWidth)
         progressMaskLayer.setToWidth(newWidth)
     }
     
@@ -102,8 +112,7 @@ public final class RetroProgressBar: UIView {
                                animationType: CAMediaTimingFunctionName = .easeInEaseOut,
                                completion: (() -> Void)? = nil) {
         
-        let normalizedValue = max(min(value, 1), 0)
-        let newWidth = bounds.width * normalizedValue - borderWidth
+        let newWidth = calculateProgressWidth(value)
         let animationGroup = DispatchGroup()
 
         animationGroup.enter()
