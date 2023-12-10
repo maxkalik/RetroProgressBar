@@ -9,7 +9,10 @@ import UIKit
 
 protocol ProgressAnimatable: CALayer {
     
+    /// Sets the layer's width instantly to the specified value.
     func setToWidth(_ width: CGFloat)
+    
+    /// Animates the layer's width to the specified value.
     func animateToWidth(_ width: CGFloat,
                         duration: TimeInterval,
                         animationType: CAMediaTimingFunctionName,
@@ -19,6 +22,8 @@ protocol ProgressAnimatable: CALayer {
 extension ProgressAnimatable {
 
     func setToWidth(_ width: CGFloat) {
+        guard width >= 0 else { return }
+        
         removeAllAnimations()
         
         CATransaction.begin()
@@ -33,6 +38,11 @@ extension ProgressAnimatable {
                         duration: TimeInterval,
                         animationType: CAMediaTimingFunctionName = .easeInEaseOut,
                         completion: (() -> Void)? = nil) {
+        guard width >= 0, width != self.bounds.width else {
+            completion?()
+            return
+        }
+        
         let animation = CABasicAnimation(keyPath: "bounds.size.width")
         animation.fromValue = bounds.width
         animation.toValue = width
