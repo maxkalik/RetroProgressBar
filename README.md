@@ -1,8 +1,8 @@
 # RetroProgressBar
 
-[![Version](https://img.shields.io/cocoapods/v/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
-[![License](https://img.shields.io/cocoapods/l/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
-[![Platform](https://img.shields.io/cocoapods/p/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+[![Version](https://img.shields.io/cocoapods/v/RetroProgressBar.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+[![License](https://img.shields.io/cocoapods/l/RetroProgressBar.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+[![Platform](https://img.shields.io/cocoapods/p/RetroProgressBar.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
 
 ![RetroProgressBar](Documentation/RetroProgressBar.gif)
 
