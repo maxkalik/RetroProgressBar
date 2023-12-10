@@ -130,8 +130,7 @@ public final class RetroProgressBar: UIView {
             completion: animationGroup.leave
         )
 
-        animationGroup.notify(queue: .main) { [weak self] in
-            guard let self else { return }
+        animationGroup.notify(queue: .main) {
             completion?()
         }
     }

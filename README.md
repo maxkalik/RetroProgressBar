@@ -1,5 +1,11 @@
 # RetroProgressBar
 
+[![Version](https://img.shields.io/cocoapods/v/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+[![License](https://img.shields.io/cocoapods/l/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+[![Platform](https://img.shields.io/cocoapods/p/RollingNumbers.svg?style=flat)](https://cocoapods.org/pods/RetroProgressBar)
+
+![RetroProgressBar](Documentation/RetroProgressBar.gif)
+
 RetroProgressBar is a customizable progress bar UIView, designed to mimic the classic aesthetics of early iOS and Mac OS X versions. It offers a bubble-like, skeuomorphic appearance, providing a nostalgic feel to your app's user interface.
 
 ## Features
