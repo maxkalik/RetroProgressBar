@@ -6,24 +6,28 @@ fileprivate let WIDTH_ANIMATABLE_INSET: CGFloat = 3
 
 public final class RetroProgressBar: UIView {
     
+    /// The color of the progress bar
     public var progressColor: UIColor = UIColor.systemBlue {
         didSet {
             setProgressColor(progressColor)
         }
     }
     
+    /// Corner radius of the progress bar view
     public var cornerRadius: CGFloat = 0 {
         didSet {
             setCornerRadius(cornerRadius)
         }
     }
     
+    /// Border width of the progress bar
     public var borderWidth: CGFloat = 1 {
         didSet {
             setBorderWidth(borderWidth)
         }
     }
     
+    /// Border gradient colors array
     public var borderColors: [UIColor] = [UIColor.gray, UIColor.white] {
         didSet {
             setBorderColors(borderColors)
@@ -85,12 +89,14 @@ public final class RetroProgressBar: UIView {
         )
     }
 
+    /// Set value without animation
     public func setValue(_ value: Double) {
         let newWidth = bounds.width * value
         shimmeringLayer.setToWidth(newWidth)
         progressMaskLayer.setToWidth(newWidth)
     }
     
+    /// Set value with animation
     public func setValueWithAnimation(_ value: Double,
                                duration: TimeInterval = 1.0,
                                animationType: CAMediaTimingFunctionName = .easeInEaseOut,
@@ -130,6 +136,7 @@ public final class RetroProgressBar: UIView {
         }
     }
     
+    /// Set corner radius of the progress bar
     public func setCornerRadius(_ cornerRadius: CGFloat) {
         layer.cornerRadius = cornerRadius
         progressMaskLayer.cornerRadius = cornerRadius - borderWidth / 2
@@ -138,15 +145,18 @@ public final class RetroProgressBar: UIView {
         backgroundLayer.cornerRadius = cornerRadius
     }
     
+    /// Set progress bar color
     public func setProgressColor(_ color: UIColor) {
         progressBackgroundLayer.backgroundColor = color.cgColor
     }
     
+    /// Set border width of the progress bar
     public func setBorderWidth(_ borderWidth: CGFloat) {
         setCornerRadius(cornerRadius)
         backgroundLayer.setBorderWidth(borderWidth)
     }
     
+    /// Set border gradient colors
     public func setBorderColors(_ colors: [UIColor]) {
         backgroundLayer.setBorderColors(colors)
     }
