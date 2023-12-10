@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "retroprogressbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxkalik/RetroProgressBar.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d6f12c3a209fa1e9411a3fca003531ba7e8960c9"
+      }
+    }
+  ],
+  "version" : 2
+}
