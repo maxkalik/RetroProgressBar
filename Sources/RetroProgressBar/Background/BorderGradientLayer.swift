@@ -32,7 +32,7 @@ final class BorderGradientLayer: CAGradientLayer {
     override func layoutSublayers() {
         super.layoutSublayers()
         
-        shapeLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius - 0.1).cgPath
+        shapeLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
     }
     
     func setBorderWidth(_ borderWidth: CGFloat) {

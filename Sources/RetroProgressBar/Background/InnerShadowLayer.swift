@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InnerShadowLayer: CAShapeLayer {
+final class InnerShadowLayer: CAShapeLayer {
 
     override init() {
         super.init()
