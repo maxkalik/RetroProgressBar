@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RetroProgressBar'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A progress bar inspired by old versions of iOS and Mac OS X'
   s.homepage         = 'https://github.com/maxkalik/RetroProgressBar'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }

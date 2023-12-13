@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1101808C2B268444007E4406 /* RetroProgressBar in Frameworks */ = {isa = PBXBuildFile; productRef = 1101808B2B268444007E4406 /* RetroProgressBar */; };
+		11A9E1E82B29FAB5009021C1 /* RetroProgressBar in Frameworks */ = {isa = PBXBuildFile; productRef = 11A9E1E72B29FAB5009021C1 /* RetroProgressBar */; };
 		11CC483F2B23690F00E39F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC483E2B23690F00E39F33 /* AppDelegate.swift */; };
 		11CC48412B23690F00E39F33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC48402B23690F00E39F33 /* SceneDelegate.swift */; };
 		11CC48432B23690F00E39F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC48422B23690F00E39F33 /* ViewController.swift */; };
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1101808C2B268444007E4406 /* RetroProgressBar in Frameworks */,
+				11A9E1E82B29FAB5009021C1 /* RetroProgressBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			);
 			name = AnimatedProgressBar;
 			packageProductDependencies = (
-				1101808B2B268444007E4406 /* RetroProgressBar */,
+				11A9E1E72B29FAB5009021C1 /* RetroProgressBar */,
 			);
 			productName = AnimatedProgressBar;
 			productReference = 11CC483B2B23690F00E39F33 /* AnimatedProgressBar.app */;
@@ -222,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -303,6 +303,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +380,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1101808B2B268444007E4406 /* RetroProgressBar */ = {
+		11A9E1E72B29FAB5009021C1 /* RetroProgressBar */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RetroProgressBar;
 		};
